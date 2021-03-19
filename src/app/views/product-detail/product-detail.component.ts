@@ -1,6 +1,6 @@
 import { ProductService } from './../../services/product.service';
 import { Products } from './../products/products';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -34,5 +34,9 @@ export class ProductDetailComponent implements OnInit {
     this.productService
       .getProduct(friendlyName ? friendlyName : '')
       .subscribe((product) => (this.product = product));
+  }
+
+  public onAddToCart(id:number){
+    console.log('Clicked', id);
   }
 }

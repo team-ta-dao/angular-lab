@@ -1,3 +1,4 @@
+import { CategoriesComponent } from './views/categories/categories.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -9,6 +10,7 @@ import { HomepageComponent } from './views/homepage/homepage.component';
 import { ProductsComponent } from './views/products/products.component';
 import { ProductDetailComponent } from './views/product-detail/product-detail.component';
 import { NewletterComponent } from './component/newletter/newletter.component';
+import { CheckoutComponent } from './views/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { NewletterComponent } from './component/newletter/newletter.component';
     HomepageComponent,
     ProductsComponent,
     ProductDetailComponent,
-    NewletterComponent
+    NewletterComponent,
+    CategoriesComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

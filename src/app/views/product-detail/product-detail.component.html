@@ -10,7 +10,7 @@
     <div class="my-3 p-3">
       <h2 class="display-5">{{product.name}}</h2>
       <p class="lead">$ {{product.price}}</p>
-      <button class="btn btn-success px-4 py-2">
+      <button class="btn btn-success px-4 py-2" (click)="onAddToCart(product.id)">
           Add To Cart
       </button>
       <p class="lead py-4">{{product.description}}</p>
