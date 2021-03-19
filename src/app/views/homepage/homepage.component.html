@@ -46,12 +46,12 @@
     <h3 class="mt-4">Features Products</h3>
   <div class="col-lg-4 col-md-6 mb-4" *ngFor="let p of products" >
     <div class="card h-100">
-      <a href="product-detail/{{p.friendlyName}}"
+      <a href="products/{{p.friendlyName}}"
         ><img class="card-img-top" src="{{p.img}}" alt="{{p.name}}"
       /></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="product-detail/{{p.friendlyName}}">{{p.name}}</a>
+          <a href="products/{{p.friendlyName}}">{{p.name}}</a>
         </h4>
         <h5>$ {{p.price}}</h5>
         <p class="card-text">
