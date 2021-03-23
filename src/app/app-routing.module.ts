@@ -1,3 +1,5 @@
+import { CheckoutComponent } from './views/checkout/checkout.component';
+import { CategoryDetailComponent } from './views/category-detail/category-detail.component';
 import { CategoriesComponent } from './views/categories/categories.component';
 import { ProductDetailComponent } from './views/product-detail/product-detail.component';
 import { ProductsComponent } from './views/products/products.component';
@@ -10,7 +12,8 @@ const routes: Routes = [
   { path: 'products', pathMatch: 'full', component: ProductsComponent },
   { path: 'products/:friendlyName', pathMatch: 'full', component: ProductDetailComponent },
   { path: 'categories', pathMatch: 'full', component: CategoriesComponent },
-  { path: 'categories/:friendlyName', pathMatch: 'full', component: ProductDetailComponent },
+  { path: 'categories/:friendlyName', pathMatch: 'full', component: CategoryDetailComponent },
+  { path: 'checkout', pathMatch: 'full', component: CheckoutComponent },
 ];
 
 @NgModule({

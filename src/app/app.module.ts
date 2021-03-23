@@ -11,6 +11,8 @@ import { ProductsComponent } from './views/products/products.component';
 import { ProductDetailComponent } from './views/product-detail/product-detail.component';
 import { NewletterComponent } from './component/newletter/newletter.component';
 import { CheckoutComponent } from './views/checkout/checkout.component';
+import { CategoryDetailComponent } from './views/category-detail/category-detail.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { CheckoutComponent } from './views/checkout/checkout.component';
     ProductDetailComponent,
     NewletterComponent,
     CategoriesComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    CategoryDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

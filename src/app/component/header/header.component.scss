@@ -8,3 +8,22 @@
     text-decoration: none;
   }
 }
+
+.CartNav {
+  position: relative;
+  > div {
+    span {
+      position: absolute;
+
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: yellow;
+
+      top: 0;
+      right: 0;
+
+      z-index: 10;
+    }
+  }
+}
